@@ -1,0 +1,1649 @@
+/* GENERAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F6F3EB;
+    color: #344E41;
+}
+
+
+/* HEADER */
+
+.header {
+    width: 100%;
+    height: 85px;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F6F3EB;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    color: #344E41;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.logo-icon {
+    font-size: 27px;
+}
+
+.navbar {
+    display: flex;
+    gap: 32px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #526357;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    color: #A3B18A;
+}
+
+.contact-btn {
+    text-decoration: none;
+    background-color: #344E41;
+    color: white;
+    padding: 13px 23px;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #526D59;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    min-height: 570px;
+    padding: 65px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.hero-content {
+    flex: 1;
+}
+
+.subtitle {
+    color: #A3B18A;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    line-height: 1.2;
+    margin-top: 22px;
+    max-width: 580px;
+}
+
+.hero h1 span {
+    display: block;
+    color: #A3B18A;
+}
+
+.hero-content p {
+    color: #69776C;
+    font-size: 16px;
+    line-height: 1.9;
+    max-width: 470px;
+    margin-top: 22px;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 32px;
+}
+
+.primary-btn {
+    text-decoration: none;
+    background-color: #344E41;
+    color: white;
+    padding: 15px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.secondary-btn {
+    text-decoration: none;
+    color: #344E41;
+    border: 1px solid #A3B18A;
+    padding: 14px 23px;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 24px;
+}
+/* EXPLORE PETS SECTION */
+
+.explore {
+    padding: 80px 8%;
+    background-color: #FFFFFF;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+    margin-top: 15px;
+    color: #344E41;
+}
+
+.section-heading p {
+    color: #69776C;
+    margin-top: 15px;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.pet-cards {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.pet-card {
+    flex: 1;
+    background-color: #F6F3EB;
+    padding: 35px 25px;
+    border-radius: 18px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.pet-card:hover {
+    transform: translateY(-8px);
+}
+
+.pet-icon {
+    font-size: 55px;
+    margin-bottom: 20px;
+}
+
+.pet-card h3 {
+    font-size: 23px;
+    color: #344E41;
+    margin-bottom: 15px;
+}
+
+.pet-card p {
+    color: #69776C;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 22px;
+}
+
+.pet-card a {
+    color: #526D59;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+}
+/* PET CARE SECTION */
+
+.pet-care {
+    padding: 85px 8%;
+    background-color: #F6F3EB;
+}
+
+.care-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.care-card {
+    background-color: #FFFFFF;
+    padding: 30px 20px;
+    border-radius: 18px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.care-card:hover {
+    transform: translateY(-7px);
+}
+
+.care-icon {
+    font-size: 42px;
+    margin-bottom: 18px;
+}
+
+.care-card h3 {
+    font-size: 18px;
+    color: #344E41;
+    margin-bottom: 12px;
+}
+
+.care-card p {
+    color: #69776C;
+    font-size: 13px;
+    line-height: 1.8;
+}
+/* ADOPTION SECTION */
+
+.adoption {
+    padding: 90px 8%;
+    display: flex;
+    align-items: center;
+    gap: 65px;
+    background-color: #FFFFFF;
+}
+
+.adoption-image {
+    flex: 1;
+}
+
+.adoption-image img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    border-radius: 24px;
+}
+
+.adoption-content {
+    flex: 1;
+}
+
+.adoption-content h2 {
+    font-size: 42px;
+    line-height: 1.3;
+    margin-top: 20px;
+    color: #344E41;
+}
+
+.adoption-content h2 span {
+    display: block;
+    color: #A3B18A;
+}
+
+.adoption-content p {
+    color: #69776C;
+    font-size: 15px;
+    line-height: 2;
+    margin-top: 22px;
+    max-width: 450px;
+}
+
+.adoption-btn {
+    display: inline-block;
+    margin-top: 28px;
+    padding: 15px 25px;
+    background-color: #344E41;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.adoption-btn:hover {
+    background-color: #526D59;
+}
+/* PET SHOP SECTION */
+
+.pet-shop {
+    padding: 85px 8%;
+    background-color: #F6F3EB;
+}
+
+.shop-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.shop-card {
+    background-color: #FFFFFF;
+    padding: 18px;
+    border-radius: 18px;
+    transition: 0.3s;
+}
+
+.shop-card:hover {
+    transform: translateY(-7px);
+}
+
+.product-image {
+    height: 220px;
+    border-radius: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 75px;
+    margin-bottom: 22px;
+}
+
+.food {
+    background-color: #E8EBDD;
+}
+
+.toy {
+    background-color: #F4E7D8;
+}
+
+.bed {
+    background-color: #E9E8DF;
+}
+
+.product-category {
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #A3B18A;
+    font-weight: bold;
+}
+
+.shop-card h3 {
+    color: #344E41;
+    font-size: 20px;
+    margin-top: 12px;
+}
+
+.shop-card p {
+    color: #69776C;
+    font-size: 13px;
+    margin-top: 10px;
+    line-height: 1.7;
+}
+
+.product-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 22px;
+    padding-top: 15px;
+    border-top: 1px solid #EEEEEA;
+}
+
+.price {
+    color: #344E41;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.product-bottom a {
+    color: #526D59;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}
+/* COMMUNITY SECTION */
+
+.community {
+    padding: 85px 8%;
+    background-color: #FFFFFF;
+}
+
+.community-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.community-card {
+    background-color: #F6F3EB;
+    padding: 35px 25px;
+    border-radius: 18px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.community-card:hover {
+    transform: translateY(-8px);
+}
+
+.community-icon {
+    width: 75px;
+    height: 75px;
+    background-color: #E8EBDD;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    margin: 0 auto 22px;
+}
+
+.community-card h3 {
+    color: #344E41;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.community-card p {
+    color: #69776C;
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 22px;
+}
+
+.community-card a {
+    color: #526D59;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+}
+/* ABOUT SECTION */
+
+.about {
+    padding: 90px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    background-color: #FFFFFF;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content h2 {
+    font-size: 42px;
+    line-height: 1.3;
+    margin-top: 20px;
+    color: #344E41;
+}
+
+.about-content h2 span {
+    display: block;
+    color: #A3B18A;
+}
+
+.about-content p {
+    color: #69776C;
+    font-size: 15px;
+    line-height: 2;
+    margin-top: 22px;
+    max-width: 500px;
+}
+
+.about-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 24px;
+    background-color: #344E41;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.about-decoration {
+    flex: 1;
+    min-height: 280px;
+    background-color: #E8EBDD;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-decoration span {
+    font-size: 75px;
+}
+
+.about-decoration h3 {
+    color: #344E41;
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+.about-decoration p {
+    color: #69776C;
+    margin-top: 12px;
+}
+
+
+/* CONTACT SECTION */
+
+.contact {
+    padding: 85px 8%;
+    background-color: #F6F3EB;
+}
+
+.contact-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.contact-item {
+    background-color: #FFFFFF;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 18px;
+}
+
+.contact-item span {
+    font-size: 35px;
+}
+
+.contact-item h3 {
+    color: #344E41;
+    margin-top: 15px;
+    font-size: 19px;
+}
+
+.contact-item p {
+    color: #69776C;
+    font-size: 13px;
+    margin-top: 12px;
+}
+/* FOOTER */
+
+.footer {
+    background-color: #344E41;
+    color: #F6F3EB;
+    padding: 65px 8% 25px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr 1.2fr;
+    gap: 45px;
+    padding-bottom: 45px;
+}
+
+.footer-logo {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.footer-brand p {
+    color: #D5DED4;
+    font-size: 13px;
+    line-height: 1.9;
+    margin-top: 20px;
+    max-width: 260px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-links h3,
+.footer-message h3 {
+    font-size: 17px;
+    margin-bottom: 8px;
+    color: #FFFFFF;
+}
+
+.footer-links a {
+    color: #D5DED4;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #A3B18A;
+}
+
+.footer-message p {
+    color: #D5DED4;
+    font-size: 13px;
+    line-height: 1.9;
+    margin-top: 15px;
+}
+
+.footer-message span {
+    display: block;
+    font-size: 25px;
+    margin-top: 18px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #607266;
+    padding-top: 22px;
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    color: #D5DED4;
+    font-size: 12px;
+}
+/* =========================
+   RESPONSIVE DESIGN
+========================= */
+
+/* TABLET */
+@media (max-width: 992px) {
+
+    .header {
+        padding: 0 5%;
+    }
+
+    .navbar {
+        gap: 14px;
+    }
+
+    .navbar a {
+        font-size: 13px;
+    }
+
+    .hero,
+    .adoption,
+    .about {
+        padding-left: 5%;
+        padding-right: 5%;
+        gap: 30px;
+    }
+
+    .hero h1 {
+        font-size: 40px;
+    }
+
+    .adoption-content h2,
+    .about-content h2 {
+        font-size: 36px;
+    }
+
+    .pet-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .care-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .shop-cards,
+    .community-cards,
+    .contact-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    .header {
+        height: auto;
+        padding: 20px 6%;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .logo {
+        font-size: 22px;
+    }
+
+    .navbar {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 14px 18px;
+    }
+
+    .navbar a {
+        font-size: 12px;
+    }
+
+    .contact-btn {
+        padding: 10px 14px;
+        font-size: 12px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 45px 6%;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .hero-image,
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-image img {
+        height: 300px;
+    }
+
+    .explore,
+    .pet-care,
+    .pet-shop,
+    .community,
+    .contact {
+        padding: 60px 6%;
+    }
+
+    .section-heading {
+        margin-bottom: 35px;
+    }
+
+    .section-heading h2 {
+        font-size: 28px;
+    }
+
+    .section-heading p {
+        font-size: 13px;
+    }
+
+    .pet-cards,
+    .care-cards,
+    .shop-cards,
+    .community-cards,
+    .contact-box {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .pet-card,
+    .care-card,
+    .shop-card,
+    .community-card {
+        width: 100%;
+    }
+
+    .adoption,
+    .about {
+        flex-direction: column;
+        padding: 60px 6%;
+        gap: 35px;
+        text-align: center;
+    }
+
+    .adoption-image,
+    .adoption-content,
+    .about-content,
+    .about-decoration {
+        width: 100%;
+    }
+
+    .adoption-image img {
+        height: 300px;
+    }
+
+    .adoption-content h2,
+    .about-content h2 {
+        font-size: 34px;
+    }
+
+    .adoption-content p,
+    .about-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-decoration {
+        min-height: 230px;
+    }
+
+    .footer {
+        padding: 50px 6% 22px;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px 20px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* =========================
+   EXPLORE PAGE
+========================= */
+
+.explore-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+    padding: 75px 8%;
+    background: #F6F3EB;
+}
+
+.explore-hero-content {
+    flex: 1;
+}
+
+.explore-hero-content span,
+.section-heading span {
+    color: #899477;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.explore-hero-content h1 {
+    color: #344E41;
+    font-size: 52px;
+    line-height: 1.15;
+    margin: 18px 0;
+}
+
+.explore-hero-content p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.8;
+    max-width: 450px;
+}
+
+.explore-btn {
+    display: inline-block;
+    background: #344E41;
+    color: white;
+    text-decoration: none;
+    padding: 14px 25px;
+    border-radius: 30px;
+    margin-top: 25px;
+}
+
+.explore-hero-image {
+    flex: 1.2;
+}
+
+.explore-hero-image img {
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    border-radius: 45% 45% 20px 20px;
+}
+
+
+/* CATEGORIES */
+
+.explore-categories,
+.featured-pets {
+    padding: 70px 8%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-heading h2 {
+    color: #344E41;
+    font-size: 36px;
+    margin: 12px 0;
+}
+
+.section-heading p {
+    color: #777;
+}
+
+.explore-category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.explore-category-card {
+    background: #F6F3EB;
+    border: 1px solid #e9e1d3;
+    border-radius: 22px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.explore-category-card:hover,
+.featured-pet-card:hover {
+    transform: translateY(-7px);
+}
+
+.explore-category-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.category-info {
+    padding: 20px;
+}
+
+.category-info h3 {
+    color: #344E41;
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.category-info p {
+    color: #777;
+    line-height: 1.6;
+}
+
+
+/* FEATURED PETS */
+
+.featured-pets {
+    background: #FAF8F2;
+}
+
+.featured-pet-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.featured-pet-card {
+    background: #fff;
+    border: 1px solid #e9e1d3;
+    border-radius: 20px;
+    overflow: hidden;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.featured-pet-card img {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+
+.featured-pet-info {
+    padding: 18px 12px;
+}
+
+.featured-pet-info h3 {
+    color: #344E41;
+    font-size: 17px;
+    margin-bottom: 8px;
+}
+
+.featured-pet-info p {
+    color: #888;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.featured-pet-info a {
+    display: inline-block;
+    color: #344E41;
+    border: 1px solid #344E41;
+    padding: 9px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.featured-pet-info a:hover {
+    background: #344E41;
+    color: white;
+}
+
+
+/* ADOPTION BANNER */
+
+.explore-adoption-banner {
+    position: relative;
+    margin: 20px 8% 70px;
+    min-height: 300px;
+    border-radius: 28px;
+    overflow: hidden;
+}
+
+.explore-adoption-banner img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner-content {
+    position: relative;
+    z-index: 1;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding: 35px;
+    text-align: right;
+    background: linear-gradient(
+        90deg,
+        transparent 15%,
+        rgba(246, 243, 235, 0.92) 65%
+    );
+}
+
+.banner-content h2 {
+    color: #344E41;
+    font-size: 32px;
+}
+
+.banner-content p {
+    color: #555;
+    margin: 12px 0 20px;
+}
+
+.banner-content a {
+    background: #344E41;
+    color: white;
+    text-decoration: none;
+    padding: 12px 22px;
+    border-radius: 25px;
+}
+
+
+/* EXPLORE RESPONSIVE */
+
+@media (max-width: 992px) {
+
+    .explore-hero {
+        padding: 55px 5%;
+    }
+
+    .explore-hero-content h1 {
+        font-size: 40px;
+    }
+
+    .featured-pet-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+
+    .explore-hero {
+        flex-direction: column;
+
+        padding: 45px 6%;
+
+        text-align: center;
+
+    }
+
+    .explore-hero-content h1 {
+
+        font-size: 36px;
+
+    }
+
+    .explore-hero-content p {
+
+        margin: auto;
+
+    }
+
+    .explore-hero-image img {
+
+        height: 280px;
+
+    }
+
+    .explore-categories,
+
+    .featured-pets {
+
+        padding: 55px 6%;
+
+    }
+
+    .section-heading h2 {
+
+        font-size: 28px;
+
+    }
+
+    .explore-category-grid,
+
+    .featured-pet-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .explore-category-card img {
+
+        height: 240px;
+
+    }
+
+    .featured-pet-card img {
+
+        height: 250px;
+
+    }
+
+    .explore-adoption-banner {
+
+        margin: 10px 6% 50px;
+
+    }
+
+    .banner-content {
+
+        align-items: center;
+
+        text-align: center;
+
+        padding: 25px;
+
+        background: rgba(246, 243, 235, 0.83);
+
+    }
+
+    .banner-content h2 {
+
+        font-size: 25px;
+
+    }
+
+}
+/* =========================
+   EXPLORE HERO NEW DESIGN
+========================= */
+
+.explore-hero {
+    flex-direction: row-reverse;
+    background:
+        radial-gradient(circle at 10% 20%, #e5eadb 0%, transparent 25%),
+        #F6F3EB;
+    padding: 85px 8%;
+    gap: 65px;
+}
+
+.explore-hero-content {
+    text-align: left;
+    position: relative;
+    z-index: 2;
+}
+
+.explore-hero-content h1 {
+    font-size: 54px;
+    max-width: 500px;
+    line-height: 1.15;
+}
+
+.explore-hero-content p {
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.explore-hero-image {
+    flex: 1;
+    position: relative;
+    padding: 15px;
+}
+
+.explore-hero-image img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+
+    border-radius:
+        48% 52% 62% 38% /
+        42% 40% 60% 58%;
+
+    box-shadow: 0 18px 45px rgba(52, 78, 65, 0.15);
+    border: 8px solid #fff;
+}
+
+/* Decorative cloud-like shapes */
+
+.explore-hero-image::before {
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: #A3B18A;
+    opacity: 0.45;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.explore-hero-image::after {
+    content: "";
+    position: absolute;
+    font-size: 48px;
+    bottom: 5px;
+    left: 0;
+    transform: rotate(-20deg);
+}
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .explore-hero {
+        flex-direction: column;
+        padding: 50px 6%;
+        gap: 30px;
+    }
+
+    .explore-hero-content {
+        text-align: center;
+    }
+
+    .explore-hero-content h1 {
+        font-size: 36px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .explore-hero-image img {
+        height: 290px;
+    }
+}
+/* HOME PET CATEGORY IMAGES */
+
+.pet-card {
+    overflow: hidden;
+    text-align: center;
+}
+
+.pet-card-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    border-radius: 22px;
+    margin-bottom: 20px;
+}
+
+.pet-card h3 {
+    color: #344E41;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+/* PET SHOP PRODUCT PHOTOS */
+
+.product-image {
+    width: 100%;
+    height: 230px;
+    overflow: hidden;
+    border-radius: 22px;
+    background-color: #E5EAD9;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.shop-card:hover .product-image img {
+    transform: scale(1.06);
+}
+/* BETTER PET CATEGORY IMAGE FRAMING */
+
+.pet-card-image {
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    object-position: center 35%;
+    display: block;
+    border-radius: 22px;
+    margin-bottom: 20px;
+}
+/* PETOPIA CUSTOM LOGO PAW */
+
+.logo-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    color: #344E41;
+    flex-shrink: 0;
+}
+
+.logo-icon svg {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* PETOPIA - MAXIMALIST HOME HERO */
+
+.hero-image {
+    position: relative;
+    isolation: isolate;
+    overflow: visible !important;
+}
+
+/* Decorative Heart */
+.hero-image::before {
+    content: "♡";
+    position: absolute;
+    z-index: 5;
+    top: -55px;
+    right: -45px;
+    font-size: 78px;
+    color: #344E41;
+    transform: rotate(15deg);
+    pointer-events: none;
+}
+
+/* Decorative Flower */
+.hero-image::after {
+    content: "✿";
+    position: absolute;
+    z-index: 5;
+    bottom: -35px;
+    left: -60px;
+    font-size: 70px;
+    color: #DDAF83;
+    transform: rotate(-15deg);
+    pointer-events: none;
+}
+
+/* Original rectangular image */
+.hero-image img {
+    width: 100%;
+    border-radius: 24px !important;
+    outline: none !important;
+    object-fit: cover;
+    display: block;
+}
+/* ==================================
+   PETOPIA - WARM MAXIMALIST PALETTE
+================================== */
+
+:root {
+    --warm-cream: #F4E6D5;
+    --soft-cream: #FAF2E8;
+    --terracotta: #D99B70;
+    --butter-yellow: #E8C98F;
+    --olive-green: #87945C;
+    --sage-green: #A3B18A;
+    --forest-green: #344E41;
+}
+}
+
+/* Warm background */
+body {
+    background-color: var(--warm-cream);
+    background-image:
+        radial-gradient(
+            circle at 8% 12%,
+            rgba(217, 155, 112, 0.16),
+            transparent 22%
+        ),
+        radial-gradient(
+            circle at 90% 35%,
+            rgba(232, 201, 143, 0.20),
+            transparent 24%
+        ),
+        radial-gradient(
+            circle at 15% 80%,
+            rgba(163, 177, 138, 0.15),
+            transparent 23%
+        );
+    color: var(--forest-green);
+}
+
+/* Warm section backgrounds */
+.explore,
+.pet-care,
+.pet-shop,
+.community,
+.contact {
+    background-color: transparent;
+}
+
+/* Softer and warmer cards */
+.pet-card,
+.care-card,
+.shop-card,
+.community-card {
+    background-color: var(--soft-cream);
+    border-color: rgba(217, 155, 112, 0.28);
+}
+/* PETOPIA - OLIVE GREEN BACKGROUND FIX */
+
+body {
+    background-color: #F1E9D8 !important;
+
+    background-image:
+        radial-gradient(
+            circle at 8% 12%,
+            rgba(135, 148, 92, 0.32),
+            transparent 25%
+        ),
+        radial-gradient(
+            circle at 90% 35%,
+            rgba(163, 177, 138, 0.35),
+            transparent 27%
+        ),
+        radial-gradient(
+            circle at 15% 85%,
+            rgba(135, 148, 92, 0.25),
+            transparent 25%
+        ) !important;
+}
+
+/* Remove old pink background colors */
+.hero,
+.explore,
+.pet-care,
+.pet-shop,
+.community,
+.adoption,
+.about,
+.contact {
+    background-color: transparent !important;
+}
+/* =====================================
+   PETOPIA - EXPLORE MAXIMALIST HERO
+===================================== */
+
+.explore-hero {
+    overflow: visible !important;
+}
+
+.explore-hero-image {
+    position: relative;
+    isolation: isolate;
+    overflow: visible !important;
+}
+
+/* Keep the original image shape */
+.explore-hero-image img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* General decoration style */
+.explore-decor {
+    position: absolute;
+    z-index: 3;
+    pointer-events: none;
+    line-height: 1;
+}
+
+/* Big olive heart */
+.decor-heart {
+    top: -48px;
+    right: -35px;
+    font-size: 75px;
+    color: #344E41;
+    transform: rotate(15deg);
+}
+
+/* Terracotta flower */
+.decor-flower {
+    bottom: -35px;
+    left: -45px;
+    font-size: 72px;
+    color: #D99B70;
+    transform: rotate(-15deg);
+}
+
+/* Olive star */
+.decor-star {
+    top: 12%;
+    left: -55px;
+    font-size: 48px;
+    color: #87945C;
+}
+
+/* Botanical leaves */
+.decor-leaf {
+    top: -55px;
+    left: 18%;
+    font-size: 75px;
+    color: #87945C;
+    transform: rotate(-35deg);
+}
+
+/* Small dark green heart */
+.decor-small-heart {
+    bottom: 12%;
+    right: -45px;
+    font-size: 38px;
+    color: #D99B70;
+    transform: rotate(15deg);
+}
+
+/* Second flower */
+.decor-flower-two {
+    top: 40%;
+    right: -75px;
+    font-size: 45px;
+    color: #A3B18A;
+}
+
+/* Tiny sparkle */
+.decor-sparkle {
+    bottom: -45px;
+    right: 20%;
+    font-size: 40px;
+    color: #87945C;
+}
+
+/* Extra leaves */
+.decor-leaf-two {
+    bottom: 18%;
+    left: -65px;
+    font-size: 65px;
+    color: #A3B18A;
+    transform: rotate(35deg);
+}/* EXPLORE HERO - DECORATION REFINEMENT */
+
+/* More natural leaf placement */
+.decor-leaf {
+    top: -65px;
+    left: 10%;
+    font-size: 68px;
+    color: #87945C;
+    transform: rotate(-25deg);
+}
+
+/* Move the flower away from the image */
+.decor-flower {
+    bottom: -48px;
+    left: 50px;
+    font-size: 66px;
+}
+
+/* Move the small flower away from the text */
+.decor-flower-two {
+    top: 52%;
+    right: -60px;
+    font-size: 38px;
+}
+
+/* Bring the bottom sparkle closer */
+.decor-sparkle {
+    bottom: -48px;
+    right: 40%;
+    font-size: 32px;
+}
+
+/* Softer olive decorative circle */
+.explore-hero-image::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    width: 145px;
+    height: 145px;
+    top: -25px;
+    right: -15px;
+    border-radius: 50%;
+    background: #A3B18A;
+    opacity: 0.45;
+    pointer-events: none;
+}
+/* EXPLORE - CLOUD SHAPED IMAGE */
+
+.explore-hero-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+
+    border-radius:
+        42% 58% 52% 48% /
+        48% 42% 58% 52%;
+}
